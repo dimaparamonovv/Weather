@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link id="favicon" rel="icon" type="image/png" href="" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__city">
+          <h1 class="city__name"></h1>
+
+          <form id="header__form">
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Введите город"
+              required
+            />
+
+            <button type="submit">Получить погоду</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="weather">
+        <div class="container weather__container">
+          <div class="weather__inner">
+            <div class="weather__main">
+              <img src="" alt="Иконка погоды" class="weather__icon" />
+
+              <h2 class="weather__temperature">
+                <span class="weather__value"></span>
+                <span class="weather__units">°C</span>
+              </h2>
+            </div>
+
+            <p class="weather__description"></p>
+          </div>
+
+          <ul class="weather__info-list">
+            <li class="weather__info-item"></li>
+            <li class="weather__info-item"></li>
+            <li class="weather__info-item"></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

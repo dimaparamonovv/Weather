@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+  .weather__temperature {
+    font-size: 3rem;
+  }
+
+  .weather__units {
+    font-size: 1.5rem;
+  }
+
+  .weather__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .city__name {
+    font-size: 2rem;
+  }
+
+  #header__form input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #header__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather__main {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather__temperature {
+    font-size: 2.2rem;
+  }
+
+  .weather__units {
+    font-size: 1.2rem;
+  }
+
+  .weather__description {
+    font-size: 1rem;
+  }
+
+  .weather__inner {
+    padding: 30px 20px;
+  }
+
+  .weather__info-list {
+    grid-template-columns: 1fr;
+    padding: 16px 12px;
+  }
+
+  .weather__info-item {
+    font-size: 0.9rem;
+  }
+}
